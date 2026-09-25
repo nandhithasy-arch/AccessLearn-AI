@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Visible focus indicators everywhere -- spec section 11: "It would be a
+   serious weakness if an accessibility platform has an inaccessible
+   interface." Don't let Tailwind's default outline-none creep in. */
+:focus-visible {
+  outline: 3px solid theme('colors.brand.500');
+  outline-offset: 2px;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
