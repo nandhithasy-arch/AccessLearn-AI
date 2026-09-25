@@ -1,4 +1,4 @@
-const BASE = '/api'
+const BASE = 'https://accesslearn-ai-backend.onrender.com'
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
